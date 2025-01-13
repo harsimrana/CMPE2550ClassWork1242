@@ -1,0 +1,23 @@
+[13-Jan-2025 18:59:00 UTC] Inside Index.php file 
+[13-Jan-2025 18:59:00 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 18:59:00 UTC] Before printing array value
+[13-Jan-2025 19:04:51 UTC] Inside Index.php file 
+[13-Jan-2025 19:04:51 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 19:04:51 UTC] Before printing array value
+[13-Jan-2025 19:06:05 UTC] Inside Index.php file 
+[13-Jan-2025 19:06:05 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 19:06:05 UTC] Before printing array value
+[13-Jan-2025 19:07:29 UTC] Inside Index.php file 
+[13-Jan-2025 19:07:29 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 19:07:29 UTC] Before printing array value
+[13-Jan-2025 19:11:32 UTC] Inside Index.php file 
+[13-Jan-2025 19:11:32 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 19:11:32 UTC] Before printing array value
+[13-Jan-2025 19:11:32 UTC] PHP Warning:  Undefined variable $name in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo01a/index.php on line 14
+[13-Jan-2025 19:13:17 UTC] Inside Index.php file 
+[13-Jan-2025 19:13:17 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 19:13:17 UTC] Before printing array value
+[13-Jan-2025 19:14:45 UTC] Inside Index.php file 
+[13-Jan-2025 19:14:45 UTC] Value of Name variable Harsimranjot
+[13-Jan-2025 19:14:45 UTC] Before printing array value
+[13-Jan-2025 19:31:24 UTC] PHP Parse error:  syntax error, unexpected token "require_once" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo01a/index.php on line 50
