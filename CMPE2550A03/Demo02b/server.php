@@ -1,5 +1,6 @@
 <?php
     error_log("Inside Server.php");
+    error_log(json_encode( $_GET));
 
     // Valdiate your request
     if($_SERVER['REQUEST_METHOD']== "GET")
@@ -13,6 +14,8 @@
             $_SESSION['p1Name'] = strip_tags(trim($_GET['p1Name'])); 
             $_SESSION['p2Name'] = strip_tags(trim($_GET['p2Name'])); 
             $_SESSION['gameBoard'] = array();
+
+            error_log(json_encode( $_SESSION));
 
             // returning response back to client
             echo "Player  ". $_SESSION['p1Name'] ." will go first ";
