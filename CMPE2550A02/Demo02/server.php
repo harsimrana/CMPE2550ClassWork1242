@@ -2,14 +2,11 @@
     // start/rejoin a session
     session_start();
     
-    if(isset($_SESSION['count']))
+    if(!isset($_SESSION['count']))
     {
-        $_SESSION['count']++;
+        $_SESSION['count']=1;
     }
-    else
-    {
-        $_SESSION['count'] = 1;
-    }
+    
     $count = 0;
     // Entry into error log
     error_log("Inside server file");
