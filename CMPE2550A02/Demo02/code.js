@@ -8,6 +8,33 @@ $().ready(()=>{
     
     });
 
+    //Bind onclick event for button with id b1
+    $("#b2").on("click", ()=>{
+        console.log("B2 has been clicked");
+
+        // Preparing client data to be sent to server
+        let data={};
+        data['p1Name'] = "Harsimran";
+        data['action'] = "b2";
+
+        MakeAjaxCall("server.php", "GET", data, "HTML", successB1, errorHandler);
+    
+    });
+
+    
+    //Bind onclick event for button with id b1
+    $("#b3").on("click", ()=>{
+        console.log("B3 has been clicked");
+
+        // Preparing client data to be sent to server
+        let data={};
+        data['p1Name'] = "Harsimran";
+        data['action'] = "b3";
+        
+        MakeAjaxCall("server.php", "GET", data, "JSON", successB1, errorHandler);
+    
+    });
+
 })
 
 function successB1(serverData, serverStatus)

@@ -1,0 +1,41 @@
+[20-Jan-2025 22:02:40 UTC] Inside server file
+[20-Jan-2025 22:04:36 UTC] Inside server file
+[20-Jan-2025 22:08:18 UTC] Inside server file
+[20-Jan-2025 22:09:13 UTC] Inside server file
+[20-Jan-2025 22:10:36 UTC] Inside server file
+[20-Jan-2025 22:10:40 UTC] Inside server file
+[20-Jan-2025 22:15:46 UTC] Inside server file
+[20-Jan-2025 22:15:49 UTC] Inside server file
+[20-Jan-2025 22:17:52 UTC] Inside server file
+[20-Jan-2025 22:17:54 UTC] Inside server file
+[20-Jan-2025 22:17:54 UTC] PHP Warning:  Undefined array key "p1name" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 11
+[20-Jan-2025 22:17:54 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 11
+[20-Jan-2025 22:19:02 UTC] Inside server file
+[20-Jan-2025 22:19:03 UTC] Inside server file
+[20-Jan-2025 22:20:56 UTC] Inside server file
+[20-Jan-2025 22:23:34 UTC] Inside server file
+[20-Jan-2025 22:23:34 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 27
+[20-Jan-2025 22:24:59 UTC] Inside server file
+[20-Jan-2025 22:24:59 UTC] PHP Fatal error:  Uncaught TypeError: error_log(): Argument #1 ($message) must be of type string, stdClass given in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php:26
+Stack trace:
+#0 /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php(26): error_log(Object(stdClass))
+#1 {main}
+  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 26
+[20-Jan-2025 22:26:12 UTC] Inside server file
+[20-Jan-2025 22:26:12 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 26
+[20-Jan-2025 22:26:43 UTC] Inside server file
+[20-Jan-2025 22:26:43 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 26
+[20-Jan-2025 22:27:33 UTC] Inside server file
+[20-Jan-2025 22:27:33 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo02/server.php on line 26
