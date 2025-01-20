@@ -1,6 +1,13 @@
 // To handle on page load stuff
 $().ready(()=>{
    console.log("On page load"); 
+    //Bind onclick event for button with id b1
+    $("#b1").on("click", ()=>{
+        console.log("B1 has been clicked");
+        MakeAjaxCall("server.php", "GET", {}, "HTML", successB1, errorHandler);
+    
+    });
+
 })
 
 function successB1(serverData, serverStatus)
