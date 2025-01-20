@@ -1,0 +1,35 @@
+[17-Jan-2025 21:22:32 UTC] Inside Server.php
+[17-Jan-2025 21:27:02 UTC] Inside Server.php
+[17-Jan-2025 21:29:20 UTC] Inside Server.php
+[17-Jan-2025 21:29:23 UTC] Inside Server.php
+[17-Jan-2025 21:29:33 UTC] Inside Server.php
+[17-Jan-2025 21:29:36 UTC] Inside Server.php
+[17-Jan-2025 21:31:50 UTC] Inside Server.php
+[17-Jan-2025 21:32:08 UTC] Inside Server.php
+[17-Jan-2025 21:34:43 UTC] Inside Server.php
+[17-Jan-2025 21:36:29 UTC] Inside Server.php
+[17-Jan-2025 21:36:47 UTC] Inside Server.php
+[17-Jan-2025 21:37:00 UTC] Inside Server.php
+[17-Jan-2025 21:40:59 UTC] Inside Server.php
+[17-Jan-2025 21:41:00 UTC] Inside Server.php
+[17-Jan-2025 21:41:02 UTC] Inside Server.php
+[17-Jan-2025 21:41:06 UTC] Inside Server.php
+[17-Jan-2025 21:41:06 UTC] Inside Server.php
+[17-Jan-2025 21:41:08 UTC] Inside Server.php
+[17-Jan-2025 21:41:10 UTC] Inside Server.php
+[17-Jan-2025 21:41:12 UTC] Inside Server.php
+[17-Jan-2025 21:41:13 UTC] Inside Server.php
+[17-Jan-2025 21:41:15 UTC] Inside Server.php
+[17-Jan-2025 21:44:31 UTC] Inside Server.php
+[17-Jan-2025 21:44:31 UTC] PHP Warning:  Undefined array key "action" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 8
+[17-Jan-2025 21:44:31 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 8
+[17-Jan-2025 21:44:35 UTC] Inside Server.php
+[17-Jan-2025 21:49:15 UTC] Inside Server.php
+[17-Jan-2025 21:49:15 UTC] PHP Warning:  Undefined array key "action" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 8
+[17-Jan-2025 21:49:15 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 8
+[17-Jan-2025 21:49:16 UTC] Inside Server.php
+[17-Jan-2025 21:49:22 UTC] Inside Server.php
+[17-Jan-2025 21:49:22 UTC] Inside Server.php
+[17-Jan-2025 21:51:24 UTC] Inside Server.php
+[17-Jan-2025 21:51:24 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","action":"b2"}
+[17-Jan-2025 21:51:24 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","gameBoard":[]}
