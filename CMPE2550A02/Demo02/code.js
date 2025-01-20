@@ -8,7 +8,7 @@ $().ready(()=>{
     
     });
 
-    //Bind onclick event for button with id b1
+    //Bind onclick event for button with id b2
     $("#b2").on("click", ()=>{
         console.log("B2 has been clicked");
 
@@ -22,7 +22,7 @@ $().ready(()=>{
     });
 
     
-    //Bind onclick event for button with id b1
+    //Bind onclick event for button with id b3
     $("#b3").on("click", ()=>{
         console.log("B3 has been clicked");
 
@@ -32,6 +32,18 @@ $().ready(()=>{
         data['action'] = "b3";
         
         MakeAjaxCall("server.php", "GET", data, "JSON", successB1, errorHandler);
+    
+    });
+
+    //Bind onclick event for button with id b4
+    $("#b4").on("click", ()=>{
+        console.log("B4 has been clicked");
+
+        // Preparing client data to be sent to server
+        let data={};
+        data['action'] = "b4";
+        
+        MakeAjaxCall("server.php", "GET", data, "HTML", successB1, errorHandler);
     
     });
 
