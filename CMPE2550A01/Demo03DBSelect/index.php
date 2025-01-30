@@ -16,7 +16,34 @@
 
         <main>
             <?php
+                // Direct query to do this one
+                
+                // Step 1: Establish connection
                 mySQLConnection();
+
+                // Step 2: Prepare your query 
+                $query = "select * from Students ";
+                //$query .= "where Sid = 2";
+
+                // Pattern search
+                $query .= "where SFirstName like '_i%'";
+
+                error_log("Query " . $query);
+
+                // Step 3: Run your query 
+
+                $myresultset = mySelectQuery($query);
+                
+                // Header row
+                echo "Sid   FirstName    LastName   Email     Phone<br>";
+                // fetch_assoc will return one row of data at a time as an object
+                while($row = $myresultset -> fetch_assoc() )
+                {
+                    // Data row
+                    echo $row['Sid'] . "  | " . $row['SFirstName'] . "   |   " . $row['SLastName'] ."<br>" ;
+                }
+
+
             ?>
         </main>
 

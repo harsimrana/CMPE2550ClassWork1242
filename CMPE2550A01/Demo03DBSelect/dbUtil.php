@@ -50,7 +50,7 @@ function mySelectQuery($myquery)
 
     // Run the query 
     // query function will return result set or false
-    if( !($results = $mysql_connection -> query(myquery)))
+    if( !($results = $mysql_connection -> query( $myquery) ) )
     {
         // error 
         error_log("Error while executing query ");
