@@ -33,3 +33,16 @@
 [17-Jan-2025 21:51:24 UTC] Inside Server.php
 [17-Jan-2025 21:51:24 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","action":"b2"}
 [17-Jan-2025 21:51:24 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","gameBoard":[]}
+[30-Jan-2025 20:20:35 UTC] Inside Server.php
+[30-Jan-2025 20:20:35 UTC] []
+[30-Jan-2025 20:20:35 UTC] PHP Warning:  Undefined array key "action" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 9
+[30-Jan-2025 20:20:35 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 9
+[30-Jan-2025 20:20:36 UTC] Inside Server.php
+[30-Jan-2025 20:20:36 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","action":"b2"}
+[30-Jan-2025 20:20:36 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","gameBoard":[]}
+[30-Jan-2025 20:22:49 UTC] Inside Server.php
+[30-Jan-2025 20:22:49 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","action":"b2"}
+[30-Jan-2025 20:22:49 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","gameBoard":[]}
+[30-Jan-2025 20:23:03 UTC] Inside Server.php
+[30-Jan-2025 20:23:03 UTC] {"p1Name":"Harsimranjot","p2Name":"Dustin","action":"b3"}
+[30-Jan-2025 20:27:18 UTC] PHP Parse error:  syntax error, unexpected token "=", expecting "]" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A03/Demo02b/server.php on line 31
