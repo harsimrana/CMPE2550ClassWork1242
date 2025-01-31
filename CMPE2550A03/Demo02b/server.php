@@ -5,13 +5,13 @@
 
     // Array styles
     // Not using it in this demo it is to show how to declare and use 2D array
-    $cars = array(array("Volvo", "BMW", "Toyota"), 
+    /*$cars = array(array("Volvo", "BMW", "Toyota"), 
     array("Volvo", "BMW", "Toyota"),
     array("Volvo", "BMW", "Toyota")
     ); 
     
     $numbers = [[0,3,6],[7,78]];
-
+*/
 
     // Valdiate your request
     if($_SERVER['REQUEST_METHOD']== "GET")
@@ -36,8 +36,8 @@
         {
            
 
-            echo $numbers[0][1] ."<br>";
-            echo $cars[0][0];
+            //echo $numbers[0][1] ."<br>";
+            //echo $cars[0][0];
 
             $cleanNameP1  = strip_tags(trim($_GET['p1Name'])); 
             
