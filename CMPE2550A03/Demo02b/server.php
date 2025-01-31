@@ -43,7 +43,7 @@
             
             $score = 1;
 
-            $gameBoard= []
+            //$gameBoard= [];
             $data = (object) [
                 'name' => $cleanNameP1,  // it should be arrow sign not the = one
                 'currentscore' => $score,
