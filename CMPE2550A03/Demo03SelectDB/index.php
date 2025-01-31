@@ -1,7 +1,7 @@
 <?php
     // Connect your db file
     require_once('DbUtil.php');
-    
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +19,25 @@
             <?php
             // Step 1: Connect to DB
             mySQLConnection();
-
+            error_log("Connectin part done");
             // Step 2: Prepare your query
-            
+        // Part 1: Direct query
+            $query = "select * from Students";
+
+            error_log("Query". $query);
+
+            $myResultSet = mySelectQuery($query);
+
+            error_log("Before While");
+            // fetch_assoc(): will return one row at a time as an object
+            echo "Sid  Sname    Semail   Phone <br>";
+            while($row = $myResultSet-> fetch_assoc() )
+            {
+                error_log("Inside while loop");
+                echo "<br>";
+                echo $row['sid'] . " | " . $row['sname'] . " | ". $row['semail']. " | " . $row['sphone'];
+            }
+
             ?>
         </main>
 
