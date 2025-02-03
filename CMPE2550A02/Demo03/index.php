@@ -25,11 +25,13 @@
                 error_log($query);
 
                 $resultset = mySelectQuery($query);
+                //Header row
+                echo "Sid   |  Sname  |   SEmail   | SPhone <br>";
 
                 // fetch_assoc() - returns one row at a time as an object
                 while( $row = $resultset-> fetch_assoc() )
                 {
-                    echo $row['sid']."<br>";
+                    echo $row['sid']. " | ". $row['sname']. " | " . $row['semail']. " | ". $row['sphone']."<br>";
                 }
             ?>
         </main>
