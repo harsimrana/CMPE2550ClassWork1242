@@ -17,7 +17,7 @@
         <main>
             <?php
             // RETRIEVAL PART
-            
+
              // Step 1: Connect to DB
              mySQLConnection();
             
@@ -34,6 +34,24 @@
                 while( $row = $resultset-> fetch_assoc() )
                 {
                     echo $row['sid']. " | ". $row['sname']. " | " . $row['semail']. " | ". $row['sphone']."<br>";
+                }
+
+
+                // PART 2: DML operations
+                //SPECIAL NOTE: DO not run delete/ update without where clause
+                $query = "delete from Student ";
+                $query .= "Where sid = 1";
+
+                error_log($query);
+
+                // Execute query directly from PHP code
+                $dbResponse = mysqlNonQuery($query);
+                if($dbResponse== false)
+                {
+                    echo $mysql_response;    
+                }
+                else{
+                    echo "Delete operation has affected $dbResponse rows.";
                 }
             ?>
         </main>

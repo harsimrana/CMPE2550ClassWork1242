@@ -82,15 +82,15 @@ function mySelectQuery($myquery)
     {
         error_log("No database connection established");
         $mysql_response = "No database connection established";
-
+        return false;
     }
     // DML query will return true of false only
     if( !($result = $mysql_connection-> query($myDMLQuery)))
     {
         $mysql_response = "Query Error: {$mysql_connection->errno} :  {$mysql_connection->error} ";
         error_log("Query Error: {$mysql_connection->errno} :  {$mysql_connection->error} ");
+        return false;
     }
-
 
     // All good if you are here
     return $mysql_connection->affected_rows; // afftec_rows will give the number of rows affected
