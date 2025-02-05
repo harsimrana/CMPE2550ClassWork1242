@@ -91,7 +91,7 @@ function mySelectQuery($myquery)
         error_log("Query Error: {$mysql_connection->errno} :  {$mysql_connection->error} ");
         return false;
     }
-
+    error_log("Success");
     // All good if you are here
     return $mysql_connection->affected_rows; // afftec_rows will give the number of rows affected
  }

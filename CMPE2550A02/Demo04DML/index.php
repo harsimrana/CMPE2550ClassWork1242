@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Demo 03: Database Retrieval</title>
+        <title>Demo 04: DML</title>
     </head>
     <body>
         <header>
@@ -39,6 +39,7 @@
 
                 // PART 2: DML operations
                 //SPECIAL NOTE: DO not run delete/ update without where clause
+               /*
                 $query = "delete from Student ";
                 $query .= "Where sid = 1";
 
@@ -53,6 +54,35 @@
                 else{
                     echo "Delete operation has affected $dbResponse rows.";
                 }
+                */
+                $name = "Harsimran'jot";
+
+
+                // real_escape_string()
+
+                $name = $mysql_connection-> real_escape_string( trim( strip_tags($name) ) ); 
+
+                // Insert and update part
+                 $query = "update Student ";  // Observe space at the end of the string because we are splitting our query across multiple line
+                 $query .= "set sname = '$name' ";
+                 $query .= "where sid = 5 ";
+                // Testing it with Stored procedure
+
+                // To call your SP syntax
+                // call SP_Name (Parameters)
+                $query = "call UpdateStudent('$name', 5) ";
+
+                 error_log($query);
+
+                 // Execute query directly from PHP code
+                 $dbResponse = mysqlNonQuery($query);
+                 if($dbResponse== false)
+                 {
+                     echo $mysql_response;    
+                 }
+                 else{
+                     echo "Update operation has affected $dbResponse rows.";
+                 }
             ?>
         </main>
         <footer>
