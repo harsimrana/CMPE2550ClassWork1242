@@ -4,6 +4,7 @@
     // Database connection information
     $mysql_connection= null;
 
+    $mysql_response= "";
 
 /****************************************************
  * mySQLConnection(): Establish connection to DB
@@ -87,11 +88,13 @@ function mySelectQuery($myquery)
     if($mysql_connection ==null)
     {
         error_log("No active connection");
+        $mysql_response = "No active connection. Make to establish a connection first";
         return false;
     }
     if(!($result = $mysql_connection->query($myDMLQuery)))
     {
         error_log("Error while executing query");
+        $mysql_response= "Query Error: {$mysql_connection->errno} : {$mysql_connection->error}";
         return false;
     }
     // All good
