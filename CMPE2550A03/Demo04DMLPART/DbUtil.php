@@ -2,6 +2,7 @@
 // Database connection
 $mysql_connection = null;
 
+$mysql_response = "";
 /****************************************
  * Function Name    : mySQLConnection: To connect to DB
  * Inputs           : No
@@ -64,6 +65,33 @@ function mySelectQuery($myquery)
 
 //mySQLConnection();
 
+/****************************************
+ * Function Name    : mysqlNonQuery - To execute DML queries : Insert, update or delete
+ * Inputs           : Query 
+ * Output           : NumberofrowsAffected or false
+ ****************************************/
+function mysqlNonQuery($myDMLQuery)
+{
+    // Grab hold to global varaible inside function
+    global $mysql_connection, $mysql_response;
 
+    // validate your connection that you have an active connection in place
+    if($mysql_connection==null)
+    {
+        error_log("No active connection. Make sure to establish a connectin first");
+        $mysql_response= "No active connection. Make sure to establish a connectin first";
+        return false;
+    }
+    if(!($result = $mysql_connection->query($myDMLQuery)))
+    {
+        error_log("Error while executing query");
+        $mysql_response ="Error: $mysql_connection->errno : $mysql_connection->error "; 
+        return false;
+    }
+    // if you are here, all good
+
+    error_log("Success");
+    return $mysql_connection-> affected_rows;  // affected_rows will give you the number of rows affected.
+}
 
 ?>
