@@ -1,11 +1,9 @@
-[30-Jan-2025 19:27:29 UTC] In DB util file
-[30-Jan-2025 19:27:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aulakhha_2550A012'@'localhost' (using password: YES) in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo03DBSelect/dbUtil.php:27
+[06-Feb-2025 19:48:40 UTC] In DB util file
+[06-Feb-2025 19:48:40 UTC] Connection is successful
+[06-Feb-2025 19:48:40 UTC] Query delete from Studentswhere Sid = 1
+[06-Feb-2025 19:48:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Sid = 1' at line 1 in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo04DBDML/dbUtil.php:94
 Stack trace:
-#0 /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo03DBSelect/dbUtil.php(27): mysqli->__construct('localhost', 'aulakhha_2550A0...', 'zC7D{Fgq9Z&m', 'aulakhha_2550A0...')
-#1 /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo03DBSelect/index.php(22): mySQLConnection()
+#0 /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo04DBDML/dbUtil.php(94): mysqli->query('delete from Stu...')
+#1 /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo04DBDML/index.php(35): mysqlNonQuery('delete from Stu...')
 #2 {main}
-  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo03DBSelect/dbUtil.php on line 27
-[30-Jan-2025 19:27:56 UTC] In DB util file
-[30-Jan-2025 19:27:56 UTC] Connection is successful
-[30-Jan-2025 19:27:56 UTC] Query select * from Students where SFirstName like '_i%'
-[30-Jan-2025 19:27:56 UTC] Inside DBUtil before returning result set
+  thrown in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A01/Demo04DBDML/dbUtil.php on line 94

@@ -80,7 +80,7 @@ function mySelectQuery($myquery)
  function mysqlNonQuery($myDMLQuery)
  {
     // Grab hold on to connection variable
-    global $mysql_connection;  
+    global $mysql_connection, $mysql_response;  
 
     $result = 0;
     // Validate your connection that you have an active connection in place

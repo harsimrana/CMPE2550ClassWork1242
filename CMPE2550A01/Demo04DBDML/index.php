@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <h1> Week 4: Day 03 :Demo 03: Connecting to DB </h1> 
+            <h1> Week 5: Day 03 :Demo 04: DML Operations </h1> 
         </header>
 
         <main>
@@ -22,27 +22,29 @@
                 mySQLConnection();
 
                 // Step 2: Prepare your query 
-                $query = "select * from Students ";
-                //$query .= "where Sid = 2";
+                $query = "delete from Students ";  // make sure to add space at the end of every line when you split your query across multiple lines
+                $query .= "where Sid = 1";
+                // SPECIAL NOTE:
+                // FOR Delete/ update without where clause it will delete/ update everything 
 
                 // Pattern search
-                $query .= "where SFirstName like '_i%'";
+               // $query .= "where SFirstName like '_i%'";
 
                 error_log("Query " . $query);
 
                 // Step 3: Run your query 
 
-                $myresultset = mySelectQuery($query);
+                $response = mysqlNonQuery($query);
                 
-                // Header row
-                echo "Sid   FirstName    LastName   Email     Phone<br>";
-                // fetch_assoc will return one row of data at a time as an object
-                while($row = $myresultset -> fetch_assoc() )
+                if($response== false)
                 {
-                    // Data row
-                    echo $row['Sid'] . "  | " . $row['SFirstName'] . "   |   " . $row['SLastName'] ."<br>" ;
+                    echo $mysql_response;
                 }
-
+                else
+                {
+                    echo "Delete Operation has affected $response rows";
+                }
+                
 
             ?>
         </main>
