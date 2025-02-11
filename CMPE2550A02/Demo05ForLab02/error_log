@@ -5,3 +5,11 @@
 [11-Feb-2025 20:25:25 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
 [11-Feb-2025 20:25:27 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
 [11-Feb-2025 20:25:35 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
+[11-Feb-2025 20:26:20 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
+[11-Feb-2025 20:26:28 UTC] inside Login.php
+[11-Feb-2025 20:26:32 UTC] inside Login.php
+[11-Feb-2025 20:26:32 UTC] Inside main logic
+[11-Feb-2025 20:33:34 UTC] inside Login.php
+[11-Feb-2025 20:33:44 UTC] inside Login.php
+[11-Feb-2025 20:33:44 UTC] Inside main logic
+[11-Feb-2025 20:41:19 UTC]  Excrypted Password: $2y$10$kHF0Rme7Xqs4rdYW9/RMuu73oV6BC.95EQ864mAtpsfZRvY4Clffe

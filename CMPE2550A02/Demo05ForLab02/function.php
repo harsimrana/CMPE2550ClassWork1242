@@ -7,6 +7,21 @@
 
     error_log(" Excrypted Password: " . $secret );
 
-    
+    // password_verify(regularpassword, encrypted one inside database)
+
+
+    function LoginCheck($user, $pass)
+    {
+        // bring your username and password from DB
+        global $secret;
+
+        if($user == "Simran" && password_verify($pass, $secret))
+        {
+            return true;
+        }
+        return false
+       
+    }
+
 
 ?>
