@@ -1,4 +1,24 @@
 <?php
+    error_log("Inside Login.php");
+
+    if($_SERVER['REQUEST_METHOD']=='POST')
+    {
+        error_log("Inside main logic part ");
+
+        session_start(); // Create session or rejoin session
+
+        $cleanUserName = trim(strip_tags($_POST['username'] ));
+        $cleanPassword = trim(strip_tags($_POST['password'] ));
+
+        $_SESSION['username'] = $cleanUserName;
+        
+        //Write your logic to validate username password
+        // Compare credential here
+
+        header("Location:welcome.php"); // Redirect the user to welcome.php
+
+
+    }
 
 ?>
 
