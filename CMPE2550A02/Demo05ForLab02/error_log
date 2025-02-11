@@ -1,0 +1,7 @@
+[11-Feb-2025 20:24:39 UTC] inside Login.php
+[11-Feb-2025 20:24:39 UTC] PHP Warning:  Undefined array key "Request_Method" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 3
+[11-Feb-2025 20:24:45 UTC] inside Login.php
+[11-Feb-2025 20:24:45 UTC] PHP Warning:  Undefined array key "Request_Method" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 3
+[11-Feb-2025 20:25:25 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
+[11-Feb-2025 20:25:27 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
+[11-Feb-2025 20:25:35 UTC] PHP Parse error:  syntax error, unexpected identifier "session_start" in /home/aulakhha/public_html/1242/2550/CMPE2550ClassWork1242/CMPE2550A02/Demo05ForLab02/login.php on line 7
