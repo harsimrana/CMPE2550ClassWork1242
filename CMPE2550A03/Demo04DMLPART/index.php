@@ -52,13 +52,54 @@
             
             if($response == false)
             {
-                echo "Error". $mysql_response;
+                echo "<br>Error". $mysql_response;
             }
             else
             {
-                echo "Delete operation has affected $response rows";
+                echo "<br>Delete operation has affected $response rows";
             }
 
+
+            echo "<br>Tesing Delete with Stored procedure";
+            // Test it with Stored procedure
+            $sid = 3;
+            $query = "call DeleteStudent($sid)";  // Make sure to use ' or " with string value
+            
+            error_log($query);
+            // Execute query directly from PHP code
+
+            $dbResponse = mysqlNonQuery($query);
+            
+            if($dbResponse == false)
+            {   
+                echo $dbResponse;
+            }
+            else
+            {
+                echo "<br>Delete operation has affected $dbResponse rows";
+            }
+
+
+
+            echo "<br>Tesing Update with Stored procedure";
+            // Test it with Stored procedure
+            $sid = 4;
+            $sname="Harsimranjot"
+            $query = "call UpdateStudent('$sname', $sid)";  // Make sure to use ' or " with string value
+            
+            error_log($query);
+            // Execute query directly from PHP code
+
+            $dbResponse = mysqlNonQuery($query);
+            
+            if($dbResponse == false)
+            {   
+                echo $dbResponse;
+            }
+            else
+            {
+                echo "<br>Update operation has affected $dbResponse rows";
+            }
             ?>
 
 
