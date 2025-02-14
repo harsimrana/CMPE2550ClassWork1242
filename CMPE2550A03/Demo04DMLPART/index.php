@@ -84,7 +84,12 @@
             echo "<br>Tesing Update with Stored procedure";
             // Test it with Stored procedure
             $sid = 4;
-            $sname="Harsimranjot"
+            $sname="Har\simran'jot";
+
+            // real_escape_string();
+            $sname = $mysql_connection->real_escape_string(  trim(strip_tags($sname)) );
+            error_log($sname);
+
             $query = "call UpdateStudent('$sname', $sid)";  // Make sure to use ' or " with string value
             
             error_log($query);
