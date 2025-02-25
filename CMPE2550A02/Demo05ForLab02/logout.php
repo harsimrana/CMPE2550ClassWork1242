@@ -4,7 +4,7 @@
     // To delete all your session variables
     session_unset();
 
-    // To destroy the session
+    // To destroy the session   
     session_destroy();
     
     header('Location:login.php'); 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demo 01 ASP Part</title>
+        <!--Link to jQuery And Ajax library-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"> </script>
+
+        <!-- Link to your own JS file-->
+        <script src="code.js"> </script>
+    </head>
+    <body>
+        <h1> Demo 01: ASP.NET Core 25.02.2025 </h1>
+        <h2> Form submit by GET</h2>
+
+        <form action="https://localhost:7090/registerGet" method="GET">
+            <label for="getFirst"> FirstName</label>
+            <input type="text" name="getFirst">
+
+            <br/>
+
+            <label for="getColor"> Faourire Color</label>
+            <input type="text" name="getColor">
+            <br/>
+
+            <label for="getAge"> Age</label>
+            <input type="text" name="getAge">
+            <br/>
+
+            <button type="submit" name="getSubmit"> Submit! </button>
+
+        </form>
+
+        <h2> Form Submit by POST</h2>
+       <!-- <form action="https://localhost:7090/registerPost" method="Post"> -->
+            <label for="postFirst"> FirstName</label>
+            <input type="text" name="postFirst">
+
+            <br/>
+
+            <label for="postColor"> Faourire Color</label>
+            <input type="text" name="postColor">
+            <br/>
+
+            <label for="postAge"> Age</label>
+            <input type="text" name="postAge">
+            <br/>
+
+            <button type="button" name="postSubmit"> Submit! </button>
+
+        <!--</form>-->
+
+    </body>
+</html>
