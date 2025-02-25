@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demo 01 ASP</title>
+    </head>
+    <body>
+        <h1>Demo 01 ASP 25.02.2025  </h1>
+        <h2>Form Submit by GET</h2>
+
+        <form action="https://localhost:7019/registerGet" method="GET">
+            <label for="getName"> Name</label>
+            <input type="text" name="getName">
+            <br/>
+
+            <label for="getAge"> Age</label>
+            <input type="text" name="getAge">
+            <br/>
+            <button type="submit" name="getSubmit">Submit</button>
+
+        </form>
+
+        <h2>Form Submit by POST</h2>
+
+        <form action="https://localhost:7019/registerPost" method="POST">
+            <label for="postName"> Name</label>
+            <input type="text" name="postName">
+            <br/>
+
+            <label for="postAge"> Age</label>
+            <input type="text" name="postAge">
+            <br/>
+            <button type="submit" name="postSubmit">Submit</button>
+
+        </form>
+    </body>
+    </html>
