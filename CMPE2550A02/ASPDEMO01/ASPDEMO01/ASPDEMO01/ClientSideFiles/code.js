@@ -23,13 +23,18 @@ function PostSubmit()
 
     console.log(data);
 
-    // Make Ajax call here
-    CallAjax(url, "HTML", data, "POST", SuccessPost, ErrorHandler);
+    // Make Ajax call here for HTML Part -- Uncomment the following line and make changes on Server side as well
+    // CallAjax(url, "HTML", data, "POST", SuccessPost, ErrorHandler);
+    
+    // Make Ajax call here for JSON Part -- Uncomment the following line and make changes on Server side as well
+    CallAjax(url, "JSON", data, "POST", SuccessPost, ErrorHandler);
 }
 
 function SuccessPost(serverData, serverStatus)
 {
     console.log(serverData);
+    console.log(serverData.status);  // Object style dot notaion
+    console.log(serverData['count']); // Array style 
 }
 
 function ErrorHandler(ajReq, SerStatus, ErrorThrown)

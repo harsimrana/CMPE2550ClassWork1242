@@ -78,9 +78,19 @@ namespace ASPDEMO01
                 // valdiation and sanitize  
 
 
-                
 
-                return $" Hello {sub.postFirst} you have {charCount} letters in your name";
+                // HTML response back to client -- Uncomment the following line
+                //return $" Hello {sub.postFirst} you have {charCount} letters in your name";
+
+                // JSON response back to client -- Uncomment the following line
+
+                var response = new
+                {
+                    status = "success",
+                    Count = charCount
+                };
+
+                return response;
 
             });
 

@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_1",
+    "Method": "\u003CMain\u003Eb__1_1",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -19,7 +19,7 @@
   },
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_3",
+    "Method": "\u003CMain\u003Eb__1_3",
     "RelativePath": "registerGet",
     "HttpMethod": "GET",
     "IsController": false,
@@ -53,7 +53,7 @@
   },
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_4",
+    "Method": "\u003CMain\u003Eb__1_4",
     "RelativePath": "registerPost",
     "HttpMethod": "POST",
     "IsController": false,
@@ -67,9 +67,9 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "\u003C\u003Ef__AnonymousType0\u00602[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
-          "text/plain"
+          "application/json"
         ],
         "StatusCode": 200
       }
@@ -77,7 +77,7 @@
   },
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_2",
+    "Method": "\u003CMain\u003Eb__1_2",
     "RelativePath": "special",
     "HttpMethod": "GET",
     "IsController": false,
