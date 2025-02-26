@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_0",
+    "Method": "\u003CMain\u003Eb__0_1",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -19,7 +19,7 @@
   },
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_2",
+    "Method": "\u003CMain\u003Eb__0_3",
     "RelativePath": "registerGet",
     "HttpMethod": "GET",
     "IsController": false,
@@ -53,7 +53,31 @@
   },
   {
     "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_1",
+    "Method": "\u003CMain\u003Eb__0_4",
+    "RelativePath": "registerPost",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Info",
+        "Type": "ASPDEMO01.Program\u002BInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ASPDEMO01.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_2",
     "RelativePath": "special",
     "HttpMethod": "GET",
     "IsController": false,

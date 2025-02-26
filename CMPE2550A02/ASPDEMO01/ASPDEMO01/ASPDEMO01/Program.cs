@@ -1,16 +1,44 @@
+using System.Text.RegularExpressions;
+
 namespace ASPDEMO01
 {
     public class Program
     {
+        /**************************************************
+         * Function Name    : CleanInputs
+         * Purpose          : To sanitize the input
+         * input            : string 
+         * Output           : string - Cleaned Input
+         * ****************************************************/
+        public static string CleanInputs(string input)
+        {
+            // Clean your inputs
+            string cleanInput = Regex.Replace(input.Trim(), "<.*?>|&.*?;", string.Empty);
+
+            return cleanInput;
+        }
         public static void Main(string[] args)
         {
+            
             Console.WriteLine("For Debugging purpose");
             // Webapplication is a special class provided by Microsoft: 
             // used to configre the HTTP Pipeline and routes
             
             var builder = WebApplication.CreateBuilder(args);
+            // CORS issue 
+            builder.Services.AddControllers();
+
             var app = builder.Build();
 
+            // without CORS services will fail upon attempted activation/ missing AddCors() internal exception
+
+            // Need to fix CORS problem encountered with POST AJAX request
+            // will allow web service to be called from any website
+
+            app.UseCors(x => 
+                            x.AllowAnyMethod()
+                             .AllowAnyHeader()
+                             .SetIsOriginAllowed(origin => true));
 
             // MapGet handles all GET requests receieved from client side.
             // Form submits may be used for GET requests
@@ -35,10 +63,26 @@ namespace ASPDEMO01
             */
             // AJAX calls
 
+            // This one is for simple Lamda expression
+            /* app.MapPost("/registerPost", (Info sub) =>
+             $" Client Data: {sub.postFirst}'s Favourite Color is {sub.postColor} and he/she/they is/are {sub.postAge} years old.");
+             */
 
-            /*app.MapPost("/registerPost", ( ) =>
-            $" Client Data: {postFirst}'s Favourite Color is {postColor} and he/she/they is/are {postAge} years old.");
-            */
+            // Something Complex
+
+            app.MapPost("/registerPost", (Info sub) =>
+            {
+                // Processing here
+                Console.WriteLine("Inside register Post endpoint");
+                int charCount = sub.postFirst.Length;
+                // valdiation and sanitize  
+
+
+                
+
+                return $" Hello {sub.postFirst} you have {charCount} letters in your name";
+
+            });
 
             app.Run();  // running the app
         }

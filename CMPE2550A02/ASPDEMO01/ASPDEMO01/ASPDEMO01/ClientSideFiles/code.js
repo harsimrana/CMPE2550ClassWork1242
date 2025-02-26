@@ -27,6 +27,16 @@ function PostSubmit()
     CallAjax(url, "HTML", data, "POST", SuccessPost, ErrorHandler);
 }
 
+function SuccessPost(serverData, serverStatus)
+{
+    console.log(serverData);
+}
+
+function ErrorHandler(ajReq, SerStatus, ErrorThrown)
+{
+    console.log(SerStatus);
+    console.log(ErrorThrown);
+}
 function CallAjax(url, dataType, reqData, reqMethod, SuccessFxn, errorFxn)
 {
     console.log("inside call ajax function");
