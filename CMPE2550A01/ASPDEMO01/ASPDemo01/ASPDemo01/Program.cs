@@ -1,7 +1,24 @@
+using System.Reflection.Metadata.Ecma335;
+using System.Text.RegularExpressions;
+
 namespace ASPDemo01
 {
     public class Program
     {
+        /*************************************************
+         * Function Name       : CleanInput
+         * Purpose             : To sanitize inputs
+         * Input               : String
+         * Output              : string - cleaned input
+         * ***********************************************/
+        public static string CleanInput(string input)
+        {
+            // clean your inputs here
+            string clearnInput = Regex.Replace(input, "<.*?|&.*?;", string.Empty);
+            
+            return clearnInput;
+
+        }
         public static void Main(string[] args)
         {
             Console.WriteLine("for debugging purpose");
@@ -10,7 +27,18 @@ namespace ASPDemo01
             // used to configure the HTTP Pipeline and routes
             
             var builder = WebApplication.CreateBuilder(args);
+            // CORS issue  
+            builder.Services.AddControllers();
+
             var app = builder.Build();
+
+            // Without CORS services will fail upon attempted activatio/ missing addCors internal exception
+
+            // Need to fix CORS problem encountered with POST AJAX call
+            // CORS: Cross origin Resource sharing
+
+            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().SetIsOriginAllowed(orgin => true));
+
 
             // MapGet will handle all GET requests from client side
             // Form submits may be used for GET request
@@ -29,13 +57,33 @@ namespace ASPDemo01
 
 
             // Specific end point for processing form
-            // Omne would think that passing for POST would be the same as the GET, one might be wrong
-            app.MapPost("/registerPost", (string postName, string postAge) =>
-            $"Client Data: {postName}'s age is {postName}");
+            // One would think that passing for POST would be the same as the GET, one might be wrong
+            app.MapPost("/registerPost", (ClientData cl) =>
+            {
+                Console.WriteLine("Inside registerPOST");
+                
+                int countChar = cl.postName.Length;
+                // validate and sanitize your data
+
+                // Returning String values
+                //return $"Client Data: {cl.postName}'s age is {cl.postName}";
+
+                // For something complex I need to return JSON data
+                var response = new { 
+                    name = "Harsimran",
+                    count= countChar
+
+                };
+                return response; // JSON data object
+
+            });
 
             // AJAX Calls
 
             app.Run();  // Running your app
         }
+
+        record class ClientData (string postName, string postAge);
+        // class keyword is optional here
     }
 }

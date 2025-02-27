@@ -78,7 +78,6 @@ namespace ASPDEMO01
                 // valdiation and sanitize  
 
 
-
                 // HTML response back to client -- Uncomment the following line
                 //return $" Hello {sub.postFirst} you have {charCount} letters in your name";
 
