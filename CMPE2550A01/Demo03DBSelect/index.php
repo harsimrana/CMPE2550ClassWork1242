@@ -43,6 +43,29 @@
                     echo $row['Sid'] . "  | " . $row['SFirstName'] . "   |   " . $row['SLastName'] ."<br>" ;
                 }
 
+                // with Stored Procedure 
+
+                // Step 1: establish the connection
+
+                mySQLConnection();
+
+                $sid= 3;
+                // Step 2: call your SP
+                $query = "call Getstudents($sid)";  // string values should be in single quotes
+
+                $myresultset = mySelectQuery($query);
+                
+                // Step 3 : Iterate through the result set
+
+                // Header row
+                echo "Testing with SP<br>";
+                echo "Sid   FirstName    LastName   Email     Phone<br>";
+                // fetch_assoc will return one row of data at a time as an object
+                while($row = $myresultset -> fetch_assoc() )
+                {
+                    // Data row
+                    echo $row['Sid'] . "  | " . $row['SFirstName'] . "   |   " . $row['SLastName'] ."<br>" ;
+                }
 
             ?>
         </main>
