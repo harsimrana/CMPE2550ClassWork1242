@@ -49,10 +49,16 @@
 
                 mySQLConnection();
 
-                $sid= 3;
+                $seachPattern= "imr";
                 // Step 2: call your SP
-                $query = "call Getstudents($sid)";  // string values should be in single quotes
+                $query = "call Getstudents('$searchPattern')";  // string values should be in single quotes
 
+
+                /*
+                    Create your SP in DB 
+                    select * from Students
+                    where SFirstName like CONCAT('%', serachPattern, '%')
+                */
                 $myresultset = mySelectQuery($query);
                 
                 // Step 3 : Iterate through the result set
