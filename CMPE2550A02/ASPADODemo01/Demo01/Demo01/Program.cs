@@ -36,10 +36,36 @@ namespace Demo01
 
                     //Step 2: Open the connection
 
-                    connection.Open();
+                    connection.Open();  // to open connection
                     Console.WriteLine("Connection is open now");
 
+                    //Step 3: Prepare your query
+                    string query = "select * from Employees";
 
+                    //Step 4: Execute SQl query directly from C# code
+                    // SqlCommand class object is required
+                    // Need to pass query and connection object
+                                                // Query , connection object
+                    SqlCommand command = new SqlCommand(query, connection);
+
+                    // Step 5: Run your query
+                    // ExecuteReader() - to run your retieval queries
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+
+                    // Step 6: Reading the data from returned data set
+
+                    while (reader.Read()) // false if no data or end of data set
+                    {
+                        //Access data using reader['ColumnName']
+                        Console.WriteLine($"{reader["EmployeeID"]}  {reader["LastName"]}");
+                        // You have your data, you can return it back to user using JSON object
+                        // LIST, Dictionary, Class, Array 
+
+
+                    }
+                    connection.close();  // To close the connection
 
                 }
                 catch (Exception e)
