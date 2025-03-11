@@ -65,7 +65,7 @@ namespace Demo01
 
 
                     }
-                    connection.close();  // To close the connection
+                    connection.Close();  // To close the connection
 
                 }
                 catch (Exception e)
