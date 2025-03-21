@@ -1,0 +1,21 @@
+[21-Mar-2025 19:36:06 UTC] Inside API.php GET:{"request":"example\/place\/40\/h1\/76","GETtest":"This is data in the GET object."}
+[21-Mar-2025 19:36:06 UTC] Inside API.php Request:"example\/place\/40\/h1\/76"
+[21-Mar-2025 19:36:06 UTC] Inside Constructor function 
+[21-Mar-2025 19:36:06 UTC] Inside constructor: GET
+[21-Mar-2025 19:36:06 UTC] Request: example/place/40/h1/76
+[21-Mar-2025 19:36:06 UTC] GET: {"request":"example\/place\/40\/h1\/76","GETtest":"This is data in the GET object."}
+[21-Mar-2025 19:36:06 UTC] Post: []
+[21-Mar-2025 19:36:06 UTC] 
+[21-Mar-2025 19:36:06 UTC] Inside Parse Request method
+[21-Mar-2025 19:36:06 UTC] Mehtod: "GET"
+[21-Mar-2025 19:36:06 UTC] Endpoint: "example"
+[21-Mar-2025 19:36:06 UTC] Verb: "place"
+[21-Mar-2025 19:36:06 UTC] Arguments: ["40","h1","76"]
+[21-Mar-2025 19:36:06 UTC] File: null
+[21-Mar-2025 19:36:06 UTC] 
+[21-Mar-2025 19:36:06 UTC] Inside API.PHP after constructor call
+[21-Mar-2025 19:36:06 UTC] Before calling Example function
+[21-Mar-2025 19:36:06 UTC] Inside Example function
+[21-Mar-2025 19:36:06 UTC] Inside Get Method
+[21-Mar-2025 19:36:06 UTC] Inside Response function
+[21-Mar-2025 19:36:06 UTC] Inside Response Status  function

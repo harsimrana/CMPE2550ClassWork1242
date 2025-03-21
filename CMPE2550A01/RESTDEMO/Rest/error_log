@@ -1,0 +1,41 @@
+[17-Mar-2025 16:49:05 UTC] Inside API.php GET:{"request":"example\/place\/40","GETtest":"This is data in the GET object."}
+[17-Mar-2025 16:49:05 UTC] Inside API.php Request:"example\/place\/40"
+[17-Mar-2025 16:49:05 UTC] Inside Constructor function 
+[17-Mar-2025 16:49:05 UTC] Inside constructor: GET
+[17-Mar-2025 16:49:05 UTC] Request: example/place/40
+[17-Mar-2025 16:49:05 UTC] GET: {"request":"example\/place\/40","GETtest":"This is data in the GET object."}
+[17-Mar-2025 16:49:05 UTC] Post: []
+[17-Mar-2025 16:49:05 UTC] 
+[17-Mar-2025 16:49:05 UTC] Inside Parse Request method
+[17-Mar-2025 16:49:05 UTC] Mehtod: "GET"
+[17-Mar-2025 16:49:05 UTC] Endpoint: "example"
+[17-Mar-2025 16:49:05 UTC] Verb: "place"
+[17-Mar-2025 16:49:05 UTC] Arguments: ["40"]
+[17-Mar-2025 16:49:05 UTC] File: null
+[17-Mar-2025 16:49:05 UTC] 
+[17-Mar-2025 16:49:05 UTC] Inside API.PHP after constructor call
+[17-Mar-2025 16:49:05 UTC] Before calling Example function
+[17-Mar-2025 16:49:05 UTC] Inside Example function
+[17-Mar-2025 16:49:05 UTC] Inside my GetMethod message id: 40
+[17-Mar-2025 16:49:05 UTC] Inside Response function
+[17-Mar-2025 16:49:05 UTC] Inside Response Status  function
+[17-Mar-2025 16:49:17 UTC] Inside API.php GET:{"request":"example\/place\/20"}
+[17-Mar-2025 16:49:17 UTC] Inside API.php Request:"example\/place\/20"
+[17-Mar-2025 16:49:17 UTC] Inside Constructor function 
+[17-Mar-2025 16:49:17 UTC] Inside constructor: PUT
+[17-Mar-2025 16:49:17 UTC] Request: example/place/20
+[17-Mar-2025 16:49:17 UTC] GET: {"request":"example\/place\/20"}
+[17-Mar-2025 16:49:17 UTC] Post: []
+[17-Mar-2025 16:49:17 UTC] 
+[17-Mar-2025 16:49:17 UTC] Inside Parse Request method
+[17-Mar-2025 16:49:17 UTC] Mehtod: "PUT"
+[17-Mar-2025 16:49:17 UTC] Endpoint: "example"
+[17-Mar-2025 16:49:17 UTC] Verb: "place"
+[17-Mar-2025 16:49:17 UTC] Arguments: ["20"]
+[17-Mar-2025 16:49:17 UTC] File: {"PUTtest":"My Test PUT data."}
+[17-Mar-2025 16:49:17 UTC] 
+[17-Mar-2025 16:49:17 UTC] Inside API.PHP after constructor call
+[17-Mar-2025 16:49:17 UTC] Before calling Example function
+[17-Mar-2025 16:49:17 UTC] Inside Example function
+[17-Mar-2025 16:49:17 UTC] Inside Response function
+[17-Mar-2025 16:49:17 UTC] Inside Response Status  function
