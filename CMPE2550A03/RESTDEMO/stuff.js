@@ -81,7 +81,13 @@ function TestGET() {
 function successCallback(returnedData) {
 
     console.log(returnedData);
-    $("#output").html(returnedData);
+    if(returnedData.error)
+    {
+        $("#output").html(returnedData.error);
+    }
+    else{
+        $("#output").html(returnedData);
+    }
 };
 
 
