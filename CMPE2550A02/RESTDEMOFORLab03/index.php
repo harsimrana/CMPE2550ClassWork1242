@@ -1,4 +1,14 @@
 <?php
+/*
+    API - Application programming Interface 
+    REST API  [Representaional State Transfer]
+        - 1. Stateless communication: NO sessions
+        - 2. Resources - Data and services  
+        - 3. HTTP Methods - GET, POST, PUT, DELETE
+        - 4. Standard Data Format - JSON, XML
+        - 5. Uniform interface  -- URI [Uniform Resource Indentifier]
+*/
+
 ?>
 <!DOCTYPE html>
 <html>
