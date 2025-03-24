@@ -128,12 +128,13 @@ class MyAPI
             . "<br/> - \$_GET : " . json_encode($_GET);;
         } 
         else if ($this->method == 'DELETE'){
-            return "method is DELETE <br/>- Args : " . json_encode($this->args) 
+            /*return "method is DELETE <br/>- Args : " . json_encode($this->args) 
             . "<br/> - Cleaned Data : " . json_encode($this->cleanedData) 
             . "<br/> - File : " . json_encode($this->file)
             . "<br/> - \$_POST : " . json_encode($_POST)
             . "<br/> - \$_GET : " . json_encode($_GET);;
-            //return MyDELETEMethod();
+            */
+            return $this->MyDELETEMethod();
         } 
         else {
             return "Invalid Request Type!";
@@ -141,9 +142,10 @@ class MyAPI
     }
 
 
-    private function myDELETEMethod()
+    public function MyDELETEMethod()
     {
-    
+        error_log("Inside delete function");
+        return "A message from delete method";
     }
 
     public function processAPI() {

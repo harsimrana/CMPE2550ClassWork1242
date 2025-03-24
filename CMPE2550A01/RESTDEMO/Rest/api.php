@@ -8,9 +8,10 @@ try
 {
     $API = new MyAPI($_REQUEST['request']);  // Pass the information to constructor
     error_log("Inside API.PHP after constructor call");
+    throw new Exception("Testing an intentional exception");
     echo $API->processAPI();
 }
 catch(Exception $e)
 {
-    echo json_encode(Array('error' => $e.getMessage()));
+    echo json_encode(Array('error' => $e->getMessage()));
 }

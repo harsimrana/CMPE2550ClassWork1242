@@ -19,7 +19,7 @@ function TestDELETE() {
 
     var options = {};
     options["method"] = "DELETE";
-    options["url"] = "Rest/example/place/10";
+    options["url"] = "Rest/example1/place/10/";
     options["dataType"] = "json";
     options["data"] = getData;
     options["success"] = successCallback;
