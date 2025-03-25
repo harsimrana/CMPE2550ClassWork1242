@@ -8,7 +8,7 @@ try
 {
     $API = new MyAPI($_REQUEST['request']);  // Pass the information to constructor
     error_log("Inside API.PHP after constructor call");
-    echo $API->processAPI();
+    echo $API->processAPI(); // Echo the data back to client
 }
 catch(Exception $e)
 {

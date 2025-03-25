@@ -126,6 +126,60 @@ namespace Demo01
                     Console.WriteLine("Error While Establishing connection");
                 }
 
+
+
+               
+
+
+            });
+
+            /* Demo 02 : DML Part [Insert, Update, Delete]*/
+
+            // End point to manage delete Employees
+            // Make sure to use REST methods for all operations
+            app.MapGet("/DeleteEmployee", () =>
+            {
+                Console.WriteLine("Inside Delete Endpoint");
+                SqlConnection connection = new SqlConnection(connectionString);
+
+                connection.Open();
+
+                SqlTransaction tran = connection.BeginTransaction(); //START TRANSACTION
+
+                try
+                {
+                   
+
+                    //Prepare your query
+                    string query = " delete from Employees where EmployeeID = @empID";
+
+
+                    // Create command object
+                    SqlCommand command = new SqlCommand(query, connection, tran);  // NEW Add transaction part into command as well
+
+                    //add parameters inside the command
+                    command.Parameters.AddWithValue("@empID", 1);
+
+                    // Exceute your query -
+                    //ExecuteNonQuery() - for DML queries 
+                    // Number of rows affected
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    //COMMIT YOUR TRANSACTION 
+                    tran.Commit(); // Commit if everythings goes smoothly
+
+                    Console.WriteLine($" Number of employees deleted = {rowsAffected}");
+
+                    return $" Number of employees deleted = {rowsAffected}";
+
+                }
+                catch (Exception e)
+                {
+                    tran.Rollback(); // Rollback in case of error
+                    Console.WriteLine("Error while deleting Emp" + e.Message);
+                    return "Error while deleting Emp" + e.Message;
+                }
             });
 
             app.Run();
