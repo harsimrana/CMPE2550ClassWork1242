@@ -1,4 +1,6 @@
 using Microsoft.Data.SqlClient;
+using System.Transactions;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ADODemo01
 {
@@ -121,6 +123,55 @@ namespace ADODemo01
 
             });
             
+
+            // DEMO 02 - For DML part
+
+            // End Point for managing delete employee
+            // app.MapDelete
+
+            // Make sure to use REST methods
+            app.MapGet("/DeleteEmployee", () =>{
+                Console.WriteLine("Inside the delete employee end point");
+                SqlConnection con = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"));
+                                                        // Bringing connection string from appsettings.json file
+
+                con.Open(); // to open the actual connection
+
+                SqlTransaction tracsaction = con.BeginTransaction();  // NEW Start transaction;
+
+                try
+                {
+                    //prepare your query
+
+                    string query = "delete from Employees where EmployeeId = @empID";
+
+                    SqlCommand command = new SqlCommand(query, con, tracsaction);  // New Transaction object
+
+                    command.Parameters.AddWithValue("@empID", 1);
+
+                    // Execute your query 
+                    //ExecuteNonQuery() - For running DML queries
+                    // number of rows affected
+                    int rowAffected = command.ExecuteNonQuery();
+
+
+                    //All good at this point- commit changes
+                    tracsaction.Commit();  // Save changes
+
+                    Console.WriteLine($" Number of Employees Deleted {rowAffected}");
+
+                    return $" Number of Employees Deleted {rowAffected}";
+
+                }
+                catch (Exception e)
+                {
+                    tracsaction.Rollback();
+                    Console.WriteLine("Error while doing database operations" + e.Message);
+
+                    return "Error while doing database operations" + e.Message;
+                }
+
+            });
             app.Run();
         }
     }
