@@ -147,7 +147,7 @@ namespace ADODemo01
 
                     SqlCommand command = new SqlCommand(query, con, tracsaction);  // New Transaction object
 
-                    command.Parameters.AddWithValue("@empID", 1);
+                    command.Parameters.AddWithValue("@empID", 18); // Make sure to change EMP ID here
 
                     // Execute your query 
                     //ExecuteNonQuery() - For running DML queries
