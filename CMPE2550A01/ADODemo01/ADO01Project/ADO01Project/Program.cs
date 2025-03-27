@@ -1,4 +1,5 @@
 using Microsoft.Data.SqlClient;
+using System.Transactions;
 
 namespace ADO01Project
 {
@@ -69,6 +70,54 @@ namespace ADO01Project
 
             });
 
+
+
+            // Demo 02 - For DML part  [Insert, Update and Delete]
+            // End Points for managing Delete operation
+            // Make sure to REST methods - GET, POST, PUT, DELETE
+            app.MapGet("/DeleteEmployee", () => {
+            //app.MapDelete("/DeleteEmployee", () => {
+                Console.WriteLine("Inside Delete Emp");
+
+                // Trying to get connection information from appsettings.json file
+                SqlConnection con = new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"));
+
+                con.Open(); // To open the actual connection
+
+                SqlTransaction transaction = con.BeginTransaction(); // Start a transaction
+
+                try
+                {   
+                   
+
+                    //Prepare our query 
+
+                    string query = "Delete from Employees where EmployeeID = @empId";
+
+                    SqlCommand command = new SqlCommand(query, con, transaction); // NEW PART for transaction - using new Constructor
+
+                    command.Parameters.AddWithValue("@empId", 19); // hard coded value, change it to value coming from client side
+                    // Make sure to add new employee with id 19 or change the id
+
+                    // Exceute your query 
+                    //ExecuteNonQuery() -- return the number of rows affected
+
+                    int rowsAffected= command.ExecuteNonQuery();  // For DML queries [Data manipulation language]
+
+                    transaction.Commit();  // Making changes permanent in the DB
+                    Console.WriteLine($" Number of employees deleted = {rowsAffected}");
+                    return $" Number of employees deleted = {rowsAffected}";
+
+                }
+                catch (Exception e)
+                {
+                    transaction.Rollback();  // ROllback 
+                    Console.WriteLine("Error while doing DML operations" + e.Message);
+                    return "Error while doing DML operations" + e.Message;
+                }
+
+            
+            });
             app.Run();
         }
     }
