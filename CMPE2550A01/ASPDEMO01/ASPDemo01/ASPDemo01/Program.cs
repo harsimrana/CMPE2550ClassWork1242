@@ -47,7 +47,7 @@ namespace ASPDemo01
             app.MapGet("/", () => "ASP.NET CORE Demo 01");
 
             //Specific end points are possible
-            app.MapGet("/Special", () => "When you ask for something special, I will provide it you.");
+            app.MapGet("/Special", () => "New Change When you ask for something special, I will provide it you.");
 
 
             // Specific end point for processing form

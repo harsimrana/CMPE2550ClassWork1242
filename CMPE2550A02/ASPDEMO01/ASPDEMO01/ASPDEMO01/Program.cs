@@ -48,7 +48,7 @@ namespace ASPDEMO01
             app.MapGet("/", () => "ASP DEMO 01");
 
             //Specific end point 
-            app.MapGet("/special", () => "When you ask for something special, I will provide it to you.");
+            app.MapGet("/special", () => "New Changes When you ask for something special, I will provide it to you.");
 
             // End point for Form submission
             app.MapGet("/registerGet", (string getFirst, string getColor, string getAge) => 

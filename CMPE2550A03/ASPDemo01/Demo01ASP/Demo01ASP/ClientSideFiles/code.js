@@ -14,8 +14,9 @@ function PostSubmit()
     data.postAge= $("[name=postAge]").val();
 
     console.log(data);
-
-    MakeAjaxCall("https://localhost:7184/registerPost", "POST", "JSON", data, succssHandler , errorHandler)
+    
+    MakeAjaxCall("https://aspdemo01a03-huekhtabedcyd8hz.canadacentral-01.azurewebsites.net/registerPost", "POST", "JSON", data, succssHandler, errorHandler)
+    //MakeAjaxCall("https://localhost:7184/registerPost", "POST", "JSON", data, succssHandler, errorHandler)
 }
 
 function succssHandler(serverData, serverStatus)

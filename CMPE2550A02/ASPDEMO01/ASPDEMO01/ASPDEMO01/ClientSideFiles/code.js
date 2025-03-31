@@ -13,7 +13,7 @@ function PostSubmit()
 {
     console.log("In post Submit");
 
-    let url= "https://localhost:7090/registerPost";
+    let url= "https://aspdemo01a02-gzgge0evdmcsgphr.canadacentral-01.azurewebsites.net//registerPost";
 
     let data={};
 
