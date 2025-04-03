@@ -16,6 +16,12 @@ namespace EFDemo01
             // Step 2 : Install a tool Tools-> NuGet Package Manager- Package Manager Console
             // install-package Microsoft.EntityFrameworkCore.Tools 
 
+			// Reverse Engineering part
+			/*
+				Scaffold-DbContext "Server=data.cnt.sast.ca,24680;
+				Database=demo_db2550_Northwind; User Id=USERIDhere;Password=PASSWORDHERE;
+				Encrypt= False;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir ModelsNWD
+			*/
             app.MapGet("/RetData", () =>
             {
                 Console.WriteLine("In Ret Data Endpoint");
