@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{0B1F501D-C881-45AB-9A0D-B98FA4FF5517}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harsimrana\\OneDrive - NAIT\\Documents\\NaitWebDemo1\\1242\\2550\\CMPE2550ClassWork1242\\CMPE2550A01\\EFDemo01\\EFDemo01\\ModelsNWD\\DemoDb2550NorthwindContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EFDemo01\\ModelsNWD\\DemoDb2550NorthwindContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B1F501D-C881-45AB-9A0D-B98FA4FF5517}|EFDemo01\\EFDemo01.csproj|c:\\users\\harsimrana\\onedrive - nait\\documents\\naitwebdemo1\\1242\\2550\\cmpe2550classwork1242\\cmpe2550a01\\efdemo01\\efdemo01\\modelsnwd\\demodb2550northwindcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B1F501D-C881-45AB-9A0D-B98FA4FF5517}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\modelsnwd\\demodb2550northwindcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +34,7 @@
               "RelativeToolTip": "EFDemo01\\ModelsNWD\\DemoDb2550NorthwindContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T18:17:49.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:17:49.628Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "EFDemo01\\Program.cs",
               "ToolTip": "C:\\Users\\harsimrana\\OneDrive - NAIT\\Documents\\NaitWebDemo1\\1242\\2550\\CMPE2550ClassWork1242\\CMPE2550A01\\EFDemo01\\EFDemo01\\Program.cs",
               "RelativeToolTip": "EFDemo01\\Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwHgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T18:07:16.078Z",
               "EditorCaption": ""

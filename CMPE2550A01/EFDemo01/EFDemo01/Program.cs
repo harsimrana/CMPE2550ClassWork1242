@@ -57,6 +57,86 @@ namespace EFDemo01
                 
             });
 
+            //DML part
+            // For testing purpose MapGet only
+
+            app.MapGet("/InsertCategory", () =>
+            {
+                Console.WriteLine("Inside Insert Category End point");
+
+                // Creat an object of catergory class
+
+                Category newCategory = new Category();
+
+                // Populate the values for required properties
+                newCategory.CategoryName = "Test Category";
+                newCategory.Description = "Test Category desc";
+
+                try
+                {
+                    var db = new DemoDb2550NorthwindContext();
+                    // using Add method you can add new object into the list
+
+                    db.Categories.Add(newCategory);
+
+                    // Save the changes in DB
+                    db.SaveChanges();  // Commit 
+
+                    Console.WriteLine("Inserted Successfully");
+                    return " Inserted Successfully";  // HTML response
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error" + e.Message);
+                    return "Error " + e.Message;
+                }
+
+            });
+
+            app.MapGet("/DeleteCategory/{cid}", (string cid)=>
+            {
+                Console.WriteLine("Inside Delete one");
+
+                try
+                {
+                    int id = int.Parse(cid); // converting value to int type
+
+                    var db = new DemoDb2550NorthwindContext();
+
+                    // Try to delete category from db
+
+                    if (db.Categories.Find(id) is Category c)
+                    {
+                        // if match found it will return an object
+
+                        // Remove that object from the LIST
+                        db.Categories.Remove(c);
+
+
+                        // FOR UPDATE PART  Make changes in the object and then update it
+
+                        //c.CategoryName = "TimCoffee";
+
+                        //db.Categories.Update(c);
+
+                        db.SaveChanges();
+
+                        Console.WriteLine("Deleted successfully");
+                    
+
+                    }
+                    return "Deleted successfully";
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error" + e.Message);
+                    return "Error " + e.Message;
+                }
+
+            });
+
             app.Run();
         }
     }
