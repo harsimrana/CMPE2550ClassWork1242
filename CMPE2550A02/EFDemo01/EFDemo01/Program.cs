@@ -112,7 +112,7 @@ namespace EFDemo01
                     //Try to delete category form DB
                     if (db.Categories.Find(categoryId) is Category c)
                     { // if match found, it will return an object
-                        // Remove that oject from LIST
+                        // Remove that Object from LIST
 
                         db.Categories.Remove(c);
                         db.SaveChanges();

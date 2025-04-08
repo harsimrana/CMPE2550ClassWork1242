@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|c:\\users\\harsimrana\\onedrive - nait\\documents\\naitwebdemo1\\1242\\2550\\cmpe2550classwork1242\\cmpe2550a03\\efdemo01\\efdemo01\\modelnwd\\demodb2550northwindcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\modelnwd\\demodb2550northwindcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|c:\\users\\harsimrana\\onedrive - nait\\documents\\naitwebdemo1\\1242\\2550\\cmpe2550classwork1242\\cmpe2550a03\\efdemo01\\efdemo01\\modelnwd\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\modelnwd\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|c:\\users\\harsimrana\\onedrive - nait\\documents\\naitwebdemo1\\1242\\2550\\cmpe2550classwork1242\\cmpe2550a03\\efdemo01\\efdemo01\\modelnwd\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\modelnwd\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|c:\\users\\harsimrana\\onedrive - nait\\documents\\naitwebdemo1\\1242\\2550\\cmpe2550classwork1242\\cmpe2550a03\\efdemo01\\efdemo01\\modelnwd\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\modelnwd\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|c:\\users\\harsimrana\\onedrive - nait\\documents\\naitwebdemo1\\1242\\2550\\cmpe2550classwork1242\\cmpe2550a03\\efdemo01\\efdemo01\\modelnwd\\demodb2550northwindcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD897FA7-239C-42F6-B0EF-42940AE46F42}|EFDemo01\\EFDemo01.csproj|solutionrelative:efdemo01\\modelnwd\\demodb2550northwindcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +42,12 @@
               "RelativeToolTip": "EFDemo01\\ModelNWD\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:30:59.813Z"
+              "WhenOpened": "2025-04-04T19:30:59.813Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\harsimrana\\OneDrive - NAIT\\Documents\\NaitWebDemo1\\1242\\2550\\CMPE2550ClassWork1242\\CMPE2550A03\\EFDemo01\\EFDemo01\\ModelNWD\\Category.cs",
               "RelativeDocumentMoniker": "EFDemo01\\ModelNWD\\Category.cs",
@@ -54,11 +55,12 @@
               "RelativeToolTip": "EFDemo01\\ModelNWD\\Category.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:30:49.685Z"
+              "WhenOpened": "2025-04-04T19:30:49.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DemoDb2550NorthwindContext.cs",
               "DocumentMoniker": "C:\\Users\\harsimrana\\OneDrive - NAIT\\Documents\\NaitWebDemo1\\1242\\2550\\CMPE2550ClassWork1242\\CMPE2550A03\\EFDemo01\\EFDemo01\\ModelNWD\\DemoDb2550NorthwindContext.cs",
               "RelativeDocumentMoniker": "EFDemo01\\ModelNWD\\DemoDb2550NorthwindContext.cs",
@@ -77,7 +79,7 @@
               "RelativeDocumentMoniker": "EFDemo01\\Program.cs",
               "ToolTip": "C:\\Users\\harsimrana\\OneDrive - NAIT\\Documents\\NaitWebDemo1\\1242\\2550\\CMPE2550ClassWork1242\\CMPE2550A03\\EFDemo01\\EFDemo01\\Program.cs",
               "RelativeToolTip": "EFDemo01\\Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwC4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAkwJoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T19:14:43.412Z",
               "EditorCaption": ""
